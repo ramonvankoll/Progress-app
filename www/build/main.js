@@ -42940,7 +42940,7 @@ function PanGesture_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_53__components_modal_modal_controller__ = __webpack_require__(135);
 /* unused harmony reexport ModalController */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__ = __webpack_require__(68);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_54__components_nav_nav__["a"]; });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_55__components_nav_nav_pop__ = __webpack_require__(66);
 /* unused harmony reexport NavPop */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_56__components_nav_nav_pop_anchor__ = __webpack_require__(137);
@@ -43057,7 +43057,7 @@ function PanGesture_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_110__platform_dom_controller__ = __webpack_require__(8);
 /* unused harmony reexport DomController */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_111__platform_platform__ = __webpack_require__(3);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "g", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
+/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "f", function() { return __WEBPACK_IMPORTED_MODULE_111__platform_platform__["a"]; });
 /* unused harmony reexport setupPlatform */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_112__tap_click_haptic__ = __webpack_require__(35);
 /* unused harmony reexport Haptic */
@@ -43070,7 +43070,7 @@ function PanGesture_tsickle_Closure_declarations() {
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_116__navigation_nav_controller_base__ = __webpack_require__(45);
 /* unused harmony reexport NavControllerBase */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__ = __webpack_require__(15);
-/* harmony reexport (binding) */ __webpack_require__.d(__webpack_exports__, "e", function() { return __WEBPACK_IMPORTED_MODULE_117__navigation_nav_params__["a"]; });
+/* unused harmony reexport NavParams */
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_118__navigation_nav_util__ = __webpack_require__(21);
 /* unused harmony reexport DeepLinkMetadata */
 /* unused harmony reexport DeepLinkMetadataFactory */
@@ -55743,7 +55743,7 @@ var HomePage = (function () {
 }());
 HomePage = __decorate([
     __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-home',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n  <h3>Ionic Menu Starter</h3>\n\n  <p>\n    If you get lost, the <a href="http://ionicframework.com/docs/v2">docs</a> will show you the way.\n  </p>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\home\home.html"*/
+        selector: 'page-home',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\home\home.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n<!-- ==================================================================== -->\n\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\home\home.html"*/
     }),
     __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
 ], HomePage);
@@ -55751,61 +55751,7 @@ HomePage = __decorate([
 //# sourceMappingURL=home.js.map
 
 /***/ }),
-/* 100 */
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
-/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return ListPage; });
-var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
-    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
-    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
-    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
-    return c > 3 && r && Object.defineProperty(target, key, r), r;
-};
-var __metadata = (this && this.__metadata) || function (k, v) {
-    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
-};
-
-
-var ListPage = ListPage_1 = (function () {
-    function ListPage(navCtrl, navParams) {
-        this.navCtrl = navCtrl;
-        this.navParams = navParams;
-        // If we navigated to this page, we will have an item available as a nav param
-        this.selectedItem = navParams.get('item');
-        // Let's populate this page with some filler content for funzies
-        this.icons = ['flask', 'wifi', 'beer', 'football', 'basketball', 'paper-plane',
-            'american-football', 'boat', 'bluetooth', 'build'];
-        this.items = [];
-        for (var i = 1; i < 11; i++) {
-            this.items.push({
-                title: 'Item ' + i,
-                note: 'This is item #' + i,
-                icon: this.icons[Math.floor(Math.random() * this.icons.length)]
-            });
-        }
-    }
-    ListPage.prototype.itemTapped = function (event, item) {
-        // That's right, we're pushing to ourselves!
-        this.navCtrl.push(ListPage_1, {
-            item: item
-        });
-    };
-    return ListPage;
-}());
-ListPage = ListPage_1 = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
-        selector: 'page-list',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\list\list.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>List</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content>\n  <ion-list>\n    <button ion-item *ngFor="let item of items" (click)="itemTapped($event, item)">\n      <ion-icon [name]="item.icon" item-left></ion-icon>\n      {{item.title}}\n      <div class="item-note" item-right>\n        {{item.note}}\n      </div>\n    </button>\n  </ion-list>\n  <div *ngIf="selectedItem" padding>\n    You navigated here from <b>{{selectedItem.title}}</b>\n  </div>\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\list\list.html"*/
-    }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */], __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* NavParams */]])
-], ListPage);
-
-var ListPage_1;
-//# sourceMappingURL=list.js.map
-
-/***/ }),
+/* 100 */,
 /* 101 */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -74348,9 +74294,13 @@ webpackEmptyContext.id = 193;
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_ionic_angular__ = __webpack_require__(44);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__app_component__ = __webpack_require__(196);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(100);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__ = __webpack_require__(104);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__ = __webpack_require__(103);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_skills_skills__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_cv_cv__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pop_pop__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_aboutme_aboutme__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_voortgang_voortgang__ = __webpack_require__(265);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_10__ionic_native_status_bar__ = __webpack_require__(104);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_11__ionic_native_splash_screen__ = __webpack_require__(103);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AppModule; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74358,6 +74308,10 @@ var __decorate = (this && this.__decorate) || function (decorators, target, key,
     else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
     return c > 3 && r && Object.defineProperty(target, key, r), r;
 };
+
+
+
+
 
 
 
@@ -74376,7 +74330,11 @@ AppModule = __decorate([
         declarations: [
             __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_5__pages_list_list__["a" /* ListPage */]
+            __WEBPACK_IMPORTED_MODULE_5__pages_skills_skills__["a" /* SkillsPage */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_cv_cv__["a" /* CVPage */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_pop_pop__["a" /* POPPage */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_aboutme_aboutme__["a" /* AboutMePage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_voortgang_voortgang__["a" /* VoortgangPage */]
         ],
         imports: [
             __WEBPACK_IMPORTED_MODULE_0__angular_platform_browser__["a" /* BrowserModule */],
@@ -74386,11 +74344,15 @@ AppModule = __decorate([
         entryComponents: [
             __WEBPACK_IMPORTED_MODULE_3__app_component__["a" /* MyApp */],
             __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */],
-            __WEBPACK_IMPORTED_MODULE_5__pages_list_list__["a" /* ListPage */]
+            __WEBPACK_IMPORTED_MODULE_5__pages_skills_skills__["a" /* SkillsPage */],
+            __WEBPACK_IMPORTED_MODULE_6__pages_cv_cv__["a" /* CVPage */],
+            __WEBPACK_IMPORTED_MODULE_7__pages_pop_pop__["a" /* POPPage */],
+            __WEBPACK_IMPORTED_MODULE_8__pages_aboutme_aboutme__["a" /* AboutMePage */],
+            __WEBPACK_IMPORTED_MODULE_9__pages_voortgang_voortgang__["a" /* VoortgangPage */]
         ],
         providers: [
-            __WEBPACK_IMPORTED_MODULE_6__ionic_native_status_bar__["a" /* StatusBar */],
-            __WEBPACK_IMPORTED_MODULE_7__ionic_native_splash_screen__["a" /* SplashScreen */],
+            __WEBPACK_IMPORTED_MODULE_10__ionic_native_status_bar__["a" /* StatusBar */],
+            __WEBPACK_IMPORTED_MODULE_11__ionic_native_splash_screen__["a" /* SplashScreen */],
             { provide: __WEBPACK_IMPORTED_MODULE_1__angular_core__["b" /* ErrorHandler */], useClass: __WEBPACK_IMPORTED_MODULE_2_ionic_angular__["c" /* IonicErrorHandler */] }
         ]
     })
@@ -74594,7 +74556,11 @@ var platformBrowserDynamic = __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_1__
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__ = __webpack_require__(104);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__ = __webpack_require__(103);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__pages_home_home__ = __webpack_require__(99);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_list_list__ = __webpack_require__(100);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__pages_skills_skills__ = __webpack_require__(264);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_6__pages_cv_cv__ = __webpack_require__(262);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_7__pages_pop_pop__ = __webpack_require__(263);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_8__pages_aboutme_aboutme__ = __webpack_require__(261);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_9__pages_voortgang_voortgang__ = __webpack_require__(265);
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return MyApp; });
 var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
     var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
@@ -74611,6 +74577,10 @@ var __metadata = (this && this.__metadata) || function (k, v) {
 
 
 
+
+
+
+
 var MyApp = (function () {
     function MyApp(platform, statusBar, splashScreen) {
         this.platform = platform;
@@ -74621,7 +74591,11 @@ var MyApp = (function () {
         // used for an example of ngFor and navigation
         this.pages = [
             { title: 'Home', component: __WEBPACK_IMPORTED_MODULE_4__pages_home_home__["a" /* HomePage */] },
-            { title: 'List', component: __WEBPACK_IMPORTED_MODULE_5__pages_list_list__["a" /* ListPage */] }
+            { title: 'Skills', component: __WEBPACK_IMPORTED_MODULE_5__pages_skills_skills__["a" /* SkillsPage */] },
+            { title: 'CV', component: __WEBPACK_IMPORTED_MODULE_6__pages_cv_cv__["a" /* CVPage */] },
+            { title: 'POP', component: __WEBPACK_IMPORTED_MODULE_7__pages_pop_pop__["a" /* POPPage */] },
+            { title: 'About Me', component: __WEBPACK_IMPORTED_MODULE_8__pages_aboutme_aboutme__["a" /* AboutMePage */] },
+            { title: 'Voortgang', component: __WEBPACK_IMPORTED_MODULE_9__pages_voortgang_voortgang__["a" /* VoortgangPage */] },
         ];
     }
     MyApp.prototype.initializeApp = function () {
@@ -74641,15 +74615,16 @@ var MyApp = (function () {
     return MyApp;
 }());
 __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */]),
-    __metadata("design:type", __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Nav */])
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_9" /* ViewChild */])(__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]),
+    __metadata("design:type", typeof (_a = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["e" /* Nav */]) === "function" && _a || Object)
 ], MyApp.prototype, "nav", void 0);
 MyApp = __decorate([
-    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\app\app.html"*/
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\app\app.html"*/'<ion-menu [content]="content">\n  <ion-header>\n    <ion-toolbar>\n      <ion-title>Menu</ion-title>\n    </ion-toolbar>\n  </ion-header>\n\n  <ion-content>\n    <ion-list>\n      <button menuClose ion-item *ngFor="let p of pages" (click)="openPage(p)">\n        {{p.title}}\n      </button>\n    </ion-list>\n  </ion-content>\n\n</ion-menu>\n\n<!-- Disable swipe-to-go-back because it\'s poor UX to combine STGB with side menus -->\n<ion-nav [root]="rootPage" #content swipeBackEnabled="false"></ion-nav>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\app\app.html"*/
     }),
-    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["g" /* Platform */], __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */], __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]])
+    __metadata("design:paramtypes", [typeof (_b = typeof __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_1_ionic_angular__["f" /* Platform */]) === "function" && _b || Object, typeof (_c = typeof __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_2__ionic_native_status_bar__["a" /* StatusBar */]) === "function" && _c || Object, typeof (_d = typeof __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */] !== "undefined" && __WEBPACK_IMPORTED_MODULE_3__ionic_native_splash_screen__["a" /* SplashScreen */]) === "function" && _d || Object])
 ], MyApp);
 
+var _a, _b, _c, _d;
 //# sourceMappingURL=app.component.js.map
 
 /***/ }),
@@ -112017,6 +111992,176 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 
 __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_platform_browser_dynamic__["a" /* platformBrowserDynamic */])().bootstrapModule(__WEBPACK_IMPORTED_MODULE_1__app_module__["a" /* AppModule */]);
 //# sourceMappingURL=main.js.map
+
+/***/ }),
+/* 261 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return AboutMePage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var AboutMePage = (function () {
+    function AboutMePage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return AboutMePage;
+}());
+AboutMePage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-aboutme',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\aboutme\aboutme.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <div class="skill">\n<!--\n        <div class="skillbar" data-percent="50%">\n            <div class="count-bar">\n            </div>\n            <div class="title">Photoshop\n            </div>\n            <div class="count">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="30%">\n            <div class="title">Indesign\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="25%">\n            <div class="title">Flash\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="break"></div>\n-->\n        <h5>Programmeer</h5>\n        <br>\n            <div class="skillbar" data-percent="60%">\n                <div class="count-bar"></div>\n                <div class="title">Dreamweaver</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="64%">\n                <div class="title">HTML/XHTML/CSS</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="48%">\n                <div class="title">JavaScript/jQuery</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="40%">\n                <div class="title">PHP/MySQL</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n        <br>\n<!--\n        <h5>Office</h5>\n            <div class="skillbar" data-percent="65%">\n                <div class="count-bar"></div>\n                <div class="title">Excel</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="90%">\n                <div class="title">Word</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="56%">\n                <div class="title">Powerpoint</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n            <div class="break"></div>\n\n<!--        <h5>Talen</h5>\n            <div class="skillbar" data-percent="99%">\n                <div class="count-bar"></div>\n                <div class="title">Nederlands</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="85%">\n                <div class="title">Engels</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="73%">\n                <div class="title">Duits</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n    </div>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\aboutme\aboutme.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+], AboutMePage);
+
+//# sourceMappingURL=aboutme.js.map
+
+/***/ }),
+/* 262 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return CVPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var CVPage = (function () {
+    function CVPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return CVPage;
+}());
+CVPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-cv',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\cv\cv.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <div class="skill">\n<!--\n        <div class="skillbar" data-percent="50%">\n            <div class="count-bar">\n            </div>\n            <div class="title">Photoshop\n            </div>\n            <div class="count">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="30%">\n            <div class="title">Indesign\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="25%">\n            <div class="title">Flash\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="break"></div>\n-->\n        <h5>Programmeer</h5>\n        <br>\n            <div class="skillbar" data-percent="60%">\n                <div class="count-bar"></div>\n                <div class="title">Dreamweaver</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="64%">\n                <div class="title">HTML/XHTML/CSS</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="48%">\n                <div class="title">JavaScript/jQuery</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="40%">\n                <div class="title">PHP/MySQL</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n        <br>\n<!--\n        <h5>Office</h5>\n            <div class="skillbar" data-percent="65%">\n                <div class="count-bar"></div>\n                <div class="title">Excel</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="90%">\n                <div class="title">Word</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="56%">\n                <div class="title">Powerpoint</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n            <div class="break"></div>\n\n<!--        <h5>Talen</h5>\n            <div class="skillbar" data-percent="99%">\n                <div class="count-bar"></div>\n                <div class="title">Nederlands</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="85%">\n                <div class="title">Engels</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="73%">\n                <div class="title">Duits</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n    </div>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\cv\cv.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+], CVPage);
+
+//# sourceMappingURL=cv.js.map
+
+/***/ }),
+/* 263 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return POPPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var POPPage = (function () {
+    function POPPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return POPPage;
+}());
+POPPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-pop',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\pop\pop.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <div class="skill">\n<!--\n        <div class="skillbar" data-percent="50%">\n            <div class="count-bar">\n            </div>\n            <div class="title">Photoshop\n            </div>\n            <div class="count">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="30%">\n            <div class="title">Indesign\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="25%">\n            <div class="title">Flash\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="break"></div>\n-->\n        <h5>Programmeer</h5>\n        <br>\n            <div class="skillbar" data-percent="60%">\n                <div class="count-bar"></div>\n                <div class="title">Dreamweaver</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="64%">\n                <div class="title">HTML/XHTML/CSS</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="48%">\n                <div class="title">JavaScript/jQuery</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="40%">\n                <div class="title">PHP/MySQL</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n        <br>\n<!--\n        <h5>Office</h5>\n            <div class="skillbar" data-percent="65%">\n                <div class="count-bar"></div>\n                <div class="title">Excel</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="90%">\n                <div class="title">Word</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="56%">\n                <div class="title">Powerpoint</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n            <div class="break"></div>\n\n<!--        <h5>Talen</h5>\n            <div class="skillbar" data-percent="99%">\n                <div class="count-bar"></div>\n                <div class="title">Nederlands</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="85%">\n                <div class="title">Engels</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="73%">\n                <div class="title">Duits</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n    </div>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\pop\pop.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+], POPPage);
+
+//# sourceMappingURL=pop.js.map
+
+/***/ }),
+/* 264 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return SkillsPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var SkillsPage = (function () {
+    function SkillsPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return SkillsPage;
+}());
+SkillsPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-skills',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\skills\skills.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Skills</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n<!-- Vanaf hier Developer skills -->\n\n    <h1>Developer Skills</h1>\n\n    HTML:\n    <div class="progress-bar">\n        <div id="progress-bar-result-html">60%</div>\n    </div>\n\n    <div class="space"></div>\n\n    CSS:\n    <div class="progress-bar">\n        <div id="progress-bar-result-css">25%</div>\n    </div>\n\n    <div class="space"></div>\n\n    JavaScript:\n    <div class="progress-bar">\n        <div id="progress-bar-result-js"></div>\n    </div>\n\n    <div class="space"></div>\n\n    Ionic:\n    <div class="progress-bar">\n        <div id="progress-bar-result-ionic">20%</div>\n    </div>\n\n    <div class="space"></div>\n\n    PHP:\n    <div class="progress-bar">\n        <div id="progress-bar-result-php">10%</div>\n    </div>\n\n    <div class="space"></div>\n\n    <!-- ==================================================================== -->\n\n    <!-- Vanaf hier Beheerders skills -->\n\n    <h1>Beheerders Skills</h1>\n\n    Windows 7, 8 & 10:\n    <div class="progress-bar">\n        <div id="progress-bar-result-windows">70%</div>\n    </div>\n\n    <div class="space"></div>\n\n    Windows server 2008 & 2012:\n    <div class="progress-bar">\n        <div id="progress-bar-result-windows_server">30%</div>\n    </div>\n\n    <div class="space"></div>\n\n    Remote Desktop:\n    <div class="progress-bar">\n        <div id="progress-bar-result-remote_desktop">50%</div>\n    </div>\n\n    <div class="space"></div>\n\n    Hyper-V:\n    <div class="progress-bar">\n        <div id="progress-bar-result-hyper_v">20%</div>\n    </div>\n\n    <div class="space"></div>\n\n<!-- ==================================================================== -->\n\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\skills\skills.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+], SkillsPage);
+
+//# sourceMappingURL=skills.js.map
+
+/***/ }),
+/* 265 */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__angular_core__ = __webpack_require__(0);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_ionic_angular__ = __webpack_require__(44);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return VoortgangPage; });
+var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
+    var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
+    if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
+    else for (var i = decorators.length - 1; i >= 0; i--) if (d = decorators[i]) r = (c < 3 ? d(r) : c > 3 ? d(target, key, r) : d(target, key)) || r;
+    return c > 3 && r && Object.defineProperty(target, key, r), r;
+};
+var __metadata = (this && this.__metadata) || function (k, v) {
+    if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
+};
+
+
+var VoortgangPage = (function () {
+    function VoortgangPage(navCtrl) {
+        this.navCtrl = navCtrl;
+    }
+    return VoortgangPage;
+}());
+VoortgangPage = __decorate([
+    __webpack_require__.i(__WEBPACK_IMPORTED_MODULE_0__angular_core__["_5" /* Component */])({
+        selector: 'page-voortgang',template:/*ion-inline-start:"C:\users\Ramon\Documents\github\progress-app\src\pages\voortgang\voortgang.html"*/'<ion-header>\n  <ion-navbar>\n    <button ion-button menuToggle>\n      <ion-icon name="menu"></ion-icon>\n    </button>\n    <ion-title>Home</ion-title>\n  </ion-navbar>\n</ion-header>\n\n<ion-content padding>\n\n    <div class="skill">\n<!--\n        <div class="skillbar" data-percent="50%">\n            <div class="count-bar">\n            </div>\n            <div class="title">Photoshop\n            </div>\n            <div class="count">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="30%">\n            <div class="title">Indesign\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="skillbar" data-percent="25%">\n            <div class="title">Flash\n            </div>\n            <div class="count">\n            </div>\n            <div class="count-bar">\n            </div>\n        </div>\n\n        <div class="break"></div>\n-->\n        <h5>Programmeer</h5>\n        <br>\n            <div class="skillbar" data-percent="60%">\n                <div class="count-bar"></div>\n                <div class="title">Dreamweaver</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="64%">\n                <div class="title">HTML/XHTML/CSS</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="48%">\n                <div class="title">JavaScript/jQuery</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="40%">\n                <div class="title">PHP/MySQL</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n        <br>\n<!--\n        <h5>Office</h5>\n            <div class="skillbar" data-percent="65%">\n                <div class="count-bar"></div>\n                <div class="title">Excel</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="90%">\n                <div class="title">Word</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="56%">\n                <div class="title">Powerpoint</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n            <div class="break"></div>\n\n<!--        <h5>Talen</h5>\n            <div class="skillbar" data-percent="99%">\n                <div class="count-bar"></div>\n                <div class="title">Nederlands</div>\n                <div class="count"></div>\n            </div>\n\n            <div class="skillbar" data-percent="85%">\n                <div class="title">Engels</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n\n            <div class="skillbar" data-percent="73%">\n                <div class="title">Duits</div>\n                <div class="count"></div>\n                <div class="count-bar"></div>\n            </div>\n-->\n    </div>\n\n  <button ion-button secondary menuToggle>Toggle Menu</button>\n</ion-content>\n'/*ion-inline-end:"C:\users\Ramon\Documents\github\progress-app\src\pages\voortgang\voortgang.html"*/
+    }),
+    __metadata("design:paramtypes", [__WEBPACK_IMPORTED_MODULE_1_ionic_angular__["d" /* NavController */]])
+], VoortgangPage);
+
+//# sourceMappingURL=voortgang.js.map
 
 /***/ })
 /******/ ]);
