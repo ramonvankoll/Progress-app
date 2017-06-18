@@ -27469,12 +27469,17 @@ h1 {
 /* alle progress-bars */
 /* Developer Skills */
 .progress-bar {
-  width: 80%;
+  width: 98%;
   background-color: #ddd;
   text-align: center;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 #progress-bar-result-html {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
   width: 60%;
   height: 30px;
   background-color: #0099FF;
@@ -27532,8 +27537,24 @@ h1 {
   color: white;
 }
 
+#progress-bar-result-office {
+  width: 70%;
+  height: 30px;
+  background-color: #0099FF;
+  line-height: 30px;
+  color: white;
+}
+
 #progress-bar-result-remote_desktop {
-  width: 50%;
+  width: 80%;
+  height: 30px;
+  background-color: #0099FF;
+  line-height: 30px;
+  color: white;
+}
+
+#progress-bar-result-virtualisatie {
+  width: 20%;
   height: 30px;
   background-color: #0099FF;
   line-height: 30px;
@@ -27548,4 +27569,227 @@ h1 {
   color: white;
 }
 
+#progress-bar-result-facet {
+  width: 90%;
+  height: 30px;
+  background-color: #0099FF;
+  line-height: 30px;
+  color: white;
+}
+
 /* ========================================================================= */
+@media (max-width: 340px) {
+  h1 {
+    font-size: 20px;
+  }
+  .skills {
+    font-size: 14px;
+  }
+  #progress-bar-result-html {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    height: 30px;
+    background-color: #0099FF;
+    line-height: 30px;
+    color: white;
+  }
+  #progress-bar-result-css {
+    width: 25%;
+    height: 30px;
+    background-color: #0099FF;
+    line-height: 30px;
+    color: white;
+  }
+  #progress-bar-result-js {
+    width: 00%;
+    height: 30px;
+    background-color: #0099FF;
+    line-height: 30px;
+    color: white;
+  }
+  #progress-bar-result-ionic {
+    width: 20%;
+    height: 30px;
+    background-color: #0099FF;
+    line-height: 30px;
+    color: white;
+  }
+  #progress-bar-result-php {
+    width: 10%;
+    height: 30px;
+    background-color: #0099FF;
+    line-height: 30px;
+    color: white;
+  }
+  /* ========================================================================= */
+  /* Beheerders skills */
+  #progress-bar-result-windows {
+    width: 70%;
+    height: 25px;
+    background-color: #0099FF;
+    line-height: 25px;
+    color: white;
+  }
+  #progress-bar-result-windows_server {
+    width: 30%;
+    height: 25px;
+    background-color: #0099FF;
+    line-height: 25px;
+    color: white;
+  }
+  #progress-bar-result-office {
+    width: 70%;
+    height: 25px;
+    background-color: #0099FF;
+    line-height: 25px;
+    color: white;
+  }
+  #progress-bar-result-remote_desktop {
+    width: 80%;
+    height: 25px;
+    background-color: #0099FF;
+    line-height: 25px;
+    color: white;
+  }
+  #progress-bar-result-virtualisatie {
+    width: 20%;
+    height: 25px;
+    background-color: #0099FF;
+    line-height: 25px;
+    color: white;
+  }
+  #progress-bar-result-hyper_v {
+    width: 20%;
+    height: 25px;
+    background-color: #0099FF;
+    line-height: 25px;
+    color: white;
+  }
+  #progress-bar-result-facet {
+    width: 90%;
+    height: 25px;
+    background-color: #0099FF;
+    line-height: 25px;
+    color: white;
+  }
+}
+
+@media (min-width: 765px) {
+  .progress-bar {
+    width: 75%;
+    background-color: #ddd;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  h1 {
+    font-size: 40px;
+    margin-bottom: 30px;
+  }
+  .skills {
+    font-size: 28px;
+  }
+  #progress-bar-result-html {
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    width: 60%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-css {
+    width: 25%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-js {
+    width: 00%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-ionic {
+    width: 20%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-php {
+    width: 10%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  /* ========================================================================= */
+  /* Beheerders skills */
+  #progress-bar-result-windows {
+    width: 70%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-windows_server {
+    width: 30%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-office {
+    width: 70%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-remote_desktop {
+    width: 80%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-virtualisatie {
+    width: 20%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-hyper_v {
+    width: 20%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+  #progress-bar-result-facet {
+    width: 90%;
+    height: 35px;
+    background-color: #0099FF;
+    line-height: 35px;
+    color: white;
+    font-size: 24px;
+  }
+}
