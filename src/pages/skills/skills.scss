@@ -4,8 +4,6 @@ page-skills {
 
 /* alle progress-bars */
 
-/* Developer Skills */
-
 .progress-bar {
     width: 98%;
     background-color: #ddd;
@@ -14,9 +12,13 @@ page-skills {
     margin-right: auto;
 }
 
+/* ========================================================================= */
+
+/* Developer Skills */
+
 #progress-bar-result-html {
     align-items: center;
-    width: 60%;
+    width: 50%;
     height: 30px;
     background-color: #0099FF;
     line-height: 30px;

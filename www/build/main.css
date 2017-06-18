@@ -27467,7 +27467,6 @@ h1 {
 
 /* ========================================================================= */
 /* alle progress-bars */
-/* Developer Skills */
 .progress-bar {
   width: 98%;
   background-color: #ddd;
@@ -27476,11 +27475,13 @@ h1 {
   margin-right: auto;
 }
 
+/* ========================================================================= */
+/* Developer Skills */
 #progress-bar-result-html {
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  width: 60%;
+  width: 50%;
   height: 30px;
   background-color: #0099FF;
   line-height: 30px;
