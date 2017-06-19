@@ -5,7 +5,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 
 import { HomePage } from '../pages/home/home';
 import { SkillsPage } from '../pages/skills/skills';
-import { CVPage } from '../pages/cv/cv';
+import { WerkervaringPage } from '../pages/werkervaring/werkervaring';
 import { POPPage } from '../pages/pop/pop';
 import { AboutMePage } from '../pages/aboutme/aboutme';
 import { VoortgangPage } from '../pages/voortgang/voortgang';
@@ -27,7 +27,7 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'Skills', component: SkillsPage },
-      { title: 'CV', component: CVPage },
+      { title: 'Werkervaring', component: WerkervaringPage },
       { title: 'POP', component: POPPage },
       { title: 'About Me', component: AboutMePage },
       { title: 'Voortgang', component: VoortgangPage },
